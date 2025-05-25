@@ -3,12 +3,7 @@ import pytest
 import sys
 import os
 
-current_dir = os.getcwd()
-parent_dir = os.path.abspath(os.path.join(current_dir, os.pardir))
-sys.path.insert(0, parent_dir)
-
-from source import ExpPlusCos
-
+from source.autograd import ExpPlusCos
 
 def test_autograd_exp_plus_cos():
     x = torch.randn(5, requires_grad=True)

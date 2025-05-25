@@ -1,6 +1,6 @@
 import torch
 from torch.nn import RMSNorm as TorchRMSNorm
-from source import MyRMSNorm
+from source.rmsnorm import MyRMSNorm
 
 import pytest
 

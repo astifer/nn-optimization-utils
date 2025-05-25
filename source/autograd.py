@@ -3,7 +3,6 @@ import torch
 class ExpPlusCos(torch.autograd.Function):
     @staticmethod
     def forward(ctx, x, y):
-        # Сохраняем тензоры для backward
         ctx.save_for_backward(x, y)
         return torch.exp(x) + torch.cos(y)
 

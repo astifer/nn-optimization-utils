@@ -26,5 +26,5 @@ project-root/
 ## Tests
 
 ```
-python tests/test_rmsnorm.py
+python -m tests.test_all    
 ```
