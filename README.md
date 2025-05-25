@@ -12,7 +12,7 @@ poetry env
 ```
 project-root/
 │
-├── src/
+├── source/
 │   ├── rmsnorm.py         # Custom RMSNorm implementation
 │   ├── autograd.py    # Custom AutoGrad Function for e^x + cos(y)
 │   └── lion.py            # Lion optimizer implementation
