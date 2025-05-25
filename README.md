@@ -13,15 +13,19 @@ poetry env
 project-root/
 │
 ├── src/
-│   └── rmsnorm.py          
+│   ├── rmsnorm.py         # Custom RMSNorm implementation
+│   ├── autograd.py    # Custom AutoGrad Function for e^x + cos(y)
+│   └── lion.py            # Lion optimizer implementation
 │
 ├── tests/
-│   └── test_rmsnorm.py     # Сравнение с torch.nn.RMSNorm
+│   ├── test_all.py 
+│   ├── test_rmsnorm.py    # Tests for RMSNorm
+│   ├── test_autograd.py   # Tests for ExpPlusCos
+│   └── test_lion.py       # Tests for Lion optimizer
 │
 ├── pyproject.toml
 └── README.md
 ```
-
 
 ## Tests
 
